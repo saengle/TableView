@@ -522,6 +522,9 @@
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="keyboardInputChanged:" destination="0rW-9A-fbH" eventType="editingChanged" id="tDS-5O-ZXd"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-fq-pHq">
                                     <rect key="frame" x="308.33333333333331" y="49" width="53.666666666666686" height="35"/>
