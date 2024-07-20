@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E126A272C4B43090032BA7A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8E126A262C4B43090032BA7A /* SnapKit */; };
 		8E4D45CA2C00754B00239DAE /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D45C92C00754B00239DAE /* ShoppingTableViewCell.swift */; };
 		8E991B242C0078310042D9FE /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E991B232C0078310042D9FE /* Shopping.swift */; };
 		8EC3E3CF2C002DEE00AD5428 /* RealTodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3E3CE2C002DEE00AD5428 /* RealTodoTableViewController.swift */; };
 		8EC3E3D12C005D4100AD5428 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3E3D02C005D4100AD5428 /* SearchTableViewController.swift */; };
 		8EC3E3D32C005DA200AD5428 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3E3D22C005DA200AD5428 /* SearchTableViewCell.swift */; };
+		8ECD542A2C040E4100724455 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD54292C040E4100724455 /* FoodViewController.swift */; };
+		8ECD542D2C04182B00724455 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECD542C2C04182B00724455 /* FoodTableViewCell.xib */; };
+		8ECD542E2C04182B00724455 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD542B2C04182B00724455 /* FoodTableViewCell.swift */; };
+		8ECD54302C041FC900724455 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD542F2C041FC900724455 /* Restaurant.swift */; };
+		8ECD54332C042C8F00724455 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8ECD54322C042C8F00724455 /* Kingfisher */; };
+		8ECD54352C0437B700724455 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD54342C0437B700724455 /* UIViewController+Extension.swift */; };
+		8ECD54372C0439D800724455 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD54362C0439D800724455 /* UILabel+Extension.swift */; };
 		8EEA46282BFEC78E009EA6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA46272BFEC78E009EA6F1 /* AppDelegate.swift */; };
 		8EEA462A2BFEC78E009EA6F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA46292BFEC78E009EA6F1 /* SceneDelegate.swift */; };
 		8EEA462C2BFEC78E009EA6F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA462B2BFEC78E009EA6F1 /* ViewController.swift */; };
@@ -35,6 +43,12 @@
 		8EC3E3CE2C002DEE00AD5428 /* RealTodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTodoTableViewController.swift; sourceTree = "<group>"; };
 		8EC3E3D02C005D4100AD5428 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8EC3E3D22C005DA200AD5428 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		8ECD54292C040E4100724455 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		8ECD542B2C04182B00724455 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		8ECD542C2C04182B00724455 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		8ECD542F2C041FC900724455 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		8ECD54342C0437B700724455 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8ECD54362C0439D800724455 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		8EEA46242BFEC78E009EA6F1 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EEA46272BFEC78E009EA6F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EEA46292BFEC78E009EA6F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECD54332C042C8F00724455 /* Kingfisher in Frameworks */,
+				8E126A272C4B43090032BA7A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,7 @@
 		8EEA46262BFEC78E009EA6F1 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				8ECD54342C0437B700724455 /* UIViewController+Extension.swift */,
 				8EEA46272BFEC78E009EA6F1 /* AppDelegate.swift */,
 				8EEA46292BFEC78E009EA6F1 /* SceneDelegate.swift */,
 				8EEA462B2BFEC78E009EA6F1 /* ViewController.swift */,
@@ -93,6 +110,7 @@
 				8EEA46352BFEC78F009EA6F1 /* Info.plist */,
 				8EEA463B2BFED9C4009EA6F1 /* HateViewController.swift */,
 				8EEA463D2BFEEB06009EA6F1 /* ShowViewController.swift */,
+				8ECD54362C0439D800724455 /* UILabel+Extension.swift */,
 				8EEA463F2BFEEB5E009EA6F1 /* PresentViewController.swift */,
 				8EEA46412BFF060A009EA6F1 /* Todo.storyboard */,
 				8EEA46432BFF06BC009EA6F1 /* Search.storyboard */,
@@ -105,6 +123,10 @@
 				8EC3E3CE2C002DEE00AD5428 /* RealTodoTableViewController.swift */,
 				8EC3E3D02C005D4100AD5428 /* SearchTableViewController.swift */,
 				8EC3E3D22C005DA200AD5428 /* SearchTableViewCell.swift */,
+				8ECD54292C040E4100724455 /* FoodViewController.swift */,
+				8ECD542B2C04182B00724455 /* FoodTableViewCell.swift */,
+				8ECD542C2C04182B00724455 /* FoodTableViewCell.xib */,
+				8ECD542F2C041FC900724455 /* Restaurant.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -125,6 +147,10 @@
 			dependencies = (
 			);
 			name = TableView;
+			packageProductDependencies = (
+				8ECD54322C042C8F00724455 /* Kingfisher */,
+				8E126A262C4B43090032BA7A /* SnapKit */,
+			);
 			productName = TableView;
 			productReference = 8EEA46242BFEC78E009EA6F1 /* TableView.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +179,10 @@
 				Base,
 			);
 			mainGroup = 8EEA461B2BFEC78E009EA6F1;
+			packageReferences = (
+				8ECD54312C042C8F00724455 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8E126A252C4B43090032BA7A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8EEA46252BFEC78E009EA6F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,6 +202,7 @@
 				8EEA46342BFEC78F009EA6F1 /* Base in Resources */,
 				8EEA462F2BFEC78E009EA6F1 /* Base in Resources */,
 				8EEA46442BFF06BC009EA6F1 /* Search.storyboard in Resources */,
+				8ECD542D2C04182B00724455 /* FoodTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +221,13 @@
 				8EEA464C2BFF3EB9009EA6F1 /* ShoppingTableViewController.swift in Sources */,
 				8E4D45CA2C00754B00239DAE /* ShoppingTableViewCell.swift in Sources */,
 				8EEA462C2BFEC78E009EA6F1 /* ViewController.swift in Sources */,
+				8ECD54352C0437B700724455 /* UIViewController+Extension.swift in Sources */,
+				8ECD54302C041FC900724455 /* Restaurant.swift in Sources */,
+				8ECD542E2C04182B00724455 /* FoodTableViewCell.swift in Sources */,
 				8EEA46462BFF161F009EA6F1 /* TodoTableViewController.swift in Sources */,
+				8ECD54372C0439D800724455 /* UILabel+Extension.swift in Sources */,
 				8EC3E3D12C005D4100AD5428 /* SearchTableViewController.swift in Sources */,
+				8ECD542A2C040E4100724455 /* FoodViewController.swift in Sources */,
 				8EC3E3D32C005DA200AD5428 /* SearchTableViewCell.swift in Sources */,
 				8EEA46482BFF2354009EA6F1 /* FocusModeTableViewController.swift in Sources */,
 				8EEA464A2BFF2CF1009EA6F1 /* SettingTableViewController.swift in Sources */,
@@ -429,6 +465,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E126A252C4B43090032BA7A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		8ECD54312C042C8F00724455 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E126A262C4B43090032BA7A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E126A252C4B43090032BA7A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8ECD54322C042C8F00724455 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ECD54312C042C8F00724455 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8EEA461C2BFEC78E009EA6F1 /* Project object */;
 }

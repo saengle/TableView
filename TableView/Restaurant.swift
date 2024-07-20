@@ -45,7 +45,7 @@ struct RestaurantList {
             type: 100
         ),
         Restaurant(
-            image: "https://search.pstatic.net/common/?src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20200805_46%2F1596638713444O2aFh_JPEG%2Fupload_bdf4d5522f8457c7ee6a70f078385a09.jpg%3Ftype%3Dw1500_60_sharpen",
+            image: "http://search.pstatic.net/common/?src=https%3A%2F%2Fmyplace-phinf.pstatic.net%2F20200805_46%2F1596638713444O2aFh_JPEG%2Fupload_bdf4d5522f8457c7ee6a70f078385a09.jpg%3Ftype%3Dw1500_60_sharpen",
             latitude: 37.518996,
             longitude: 126.885964,
             name: "에이스한식셀프",

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H03-qu-tvn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -46,8 +46,72 @@
             </objects>
             <point key="canvasLocation" x="892" y="-304"/>
         </scene>
+        <!--Food View Controller-->
+        <scene sceneID="9xV-oZ-QiX">
+            <objects>
+                <viewController id="H03-qu-tvn" customClass="FoodViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NpM-FO-MxV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-Gc-In2">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" textLabel="X50-nr-DId" style="IBUITableViewCellStyleDefault" id="09t-jp-9u4">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09t-jp-9u4" id="uM6-98-gxr">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X50-nr-DId">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-P4-XNo">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="H03-qu-tvn" id="ia8-bq-Vrb"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IUV-ex-UUQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pZU-P4-XNo" firstAttribute="leading" secondItem="IUV-ex-UUQ" secondAttribute="leading" id="1ZE-lX-NNE"/>
+                            <constraint firstItem="lBW-Gc-In2" firstAttribute="leading" secondItem="IUV-ex-UUQ" secondAttribute="leading" id="BNj-DU-WHG"/>
+                            <constraint firstItem="pZU-P4-XNo" firstAttribute="top" secondItem="IUV-ex-UUQ" secondAttribute="top" id="O3r-Te-PwC"/>
+                            <constraint firstItem="lBW-Gc-In2" firstAttribute="top" secondItem="pZU-P4-XNo" secondAttribute="bottom" id="PeV-wJ-YDx"/>
+                            <constraint firstItem="lBW-Gc-In2" firstAttribute="trailing" secondItem="IUV-ex-UUQ" secondAttribute="trailing" id="VJv-aT-k0q"/>
+                            <constraint firstItem="lBW-Gc-In2" firstAttribute="top" secondItem="pZU-P4-XNo" secondAttribute="bottom" id="cMB-jw-8Xa"/>
+                            <constraint firstItem="pZU-P4-XNo" firstAttribute="trailing" secondItem="IUV-ex-UUQ" secondAttribute="trailing" id="gxt-L0-EWh"/>
+                            <constraint firstItem="lBW-Gc-In2" firstAttribute="bottom" secondItem="IUV-ex-UUQ" secondAttribute="bottom" id="q2G-x4-FLQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodTableView" destination="lBW-Gc-In2" id="dMj-6R-GR1"/>
+                        <outlet property="searchBar" destination="pZU-P4-XNo" id="r1g-hr-1hs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiN-5q-yGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258.7786259541986" y="-28.169014084507044"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
